@@ -251,7 +251,7 @@ class GoogleDriveHelper:
         directory_name, _ = async_to_sync(format_filename, directory_name, self.__user_id, isMirror=True)
         file_metadata = {
             "name": directory_name,
-            "description": 'Uploaded by Aeon',
+            "description": "Uploaded by Animesh",
             "mimeType": self.__G_DRIVE_DIR_MIME_TYPE
         }
         if dest_id is not None:
@@ -266,9 +266,9 @@ class GoogleDriveHelper:
     def __upload_file(self, file_path, file_name, mime_type, dest_id, is_dir=True):
         file_name, _ = async_to_sync(format_filename, file_name, self.__user_id, isMirror=True)
         file_metadata = {
-            'name': file_name,
-            'description': 'Uploaded by Aeon',
-            'mimeType': mime_type,
+            "name": file_name,
+            "description": "Uploaded by Animesh",
+            "mimeType": mime_type,
         }
         if dest_id is not None:
             file_metadata['parents'] = [dest_id]
